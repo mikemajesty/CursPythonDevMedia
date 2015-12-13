@@ -4,13 +4,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2c689dbb-9388-45c1-9701-d88a461bebf9</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>aula12.py</StartupFile>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>aula13.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>hello</Name>
+    <Name>CursoDePythonDevMedia</Name>
     <RootNamespace>hello</RootNamespace>
     <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
     <InterpreterVersion>3.4</InterpreterVersion>
@@ -40,6 +41,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="aula12.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="aula13.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="aula4.py">
