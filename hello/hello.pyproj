@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2c689dbb-9388-45c1-9701-d88a461bebf9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>aula11.py</StartupFile>
+    <StartupFile>aula12.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -37,6 +37,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="aula11.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="aula12.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="aula4.py">
