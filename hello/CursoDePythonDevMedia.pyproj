@@ -6,7 +6,7 @@
     <ProjectGuid>2c689dbb-9388-45c1-9701-d88a461bebf9</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>aula23-Ler.py</StartupFile>
+    <StartupFile>aula24.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -78,6 +78,9 @@
     <Compile Include="aula23-Escrever.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="aula24.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="aula4.py">
       <SubType>Code</SubType>
     </Compile>
@@ -97,6 +100,9 @@
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aula24-web.html" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
