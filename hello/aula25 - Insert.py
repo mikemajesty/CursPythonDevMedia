@@ -1,4 +1,4 @@
-import datetime;
+﻿import datetime;
 import mysql.connector;
 import cgi;
 
@@ -32,10 +32,12 @@ print("</form>")#Fechamento do form
 
 form = cgi.FieldStorage();
 if len(form) > 0 :
+    print("<h5>Entrou</h5>");
     cnx = mysql.connector.connect(host="localhost",database="guestbook",user="root",password="mikemajesty");
+    print("<h5>"+cnx+"</h5>");
     cursor = cnx.cursor();
     add_guest = ("INSERT INTO GUESTS(name,email,date,message) VALUES(%s,%s,%s,%s)");    
-    data_guest = (form["nome"].value,form["email"].value,datetime.datetime.now(),form["mensagem"].value,);
+    data_guest = (form["nome"].value,form["email"].value,datetime.datetime.now(),form["mensagem"].value);
     cursor.execute(add_guest,data_guest);
     cnx.commit();
     cursor.close();
