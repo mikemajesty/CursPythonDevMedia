@@ -6,7 +6,7 @@
     <ProjectGuid>2c689dbb-9388-45c1-9701-d88a461bebf9</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>aula28 - Client.py</StartupFile>
+    <StartupFile>aula29_Client.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -95,6 +95,12 @@
     </Compile>
     <Compile Include="aula28 _C_Pet.py" />
     <Compile Include="aula28_C_Employee.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="aula29_Client.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="aula29_C_PrivateTest.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="aula4.py">

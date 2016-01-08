@@ -1,4 +1,4 @@
-import datetime
+﻿import datetime
 import mysql.connector
 import cgi
 
@@ -26,7 +26,7 @@ cursor = cnx.cursor();
 cursor.execute("SELECT * FROM GUESTS")
 row = cursor.fetchone()
 print("<table>")
- while row is not None:
+while row is not None:
      print("<tr>");
      print("<td>");
      print(str(row[0]));
