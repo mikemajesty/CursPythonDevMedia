@@ -1,4 +1,4 @@
-import random;
+﻿import random;
 
 class Table:
     def __init__(self, players):
@@ -58,4 +58,74 @@ class Player:
     def give_cards(self,cards):
         self.hand.add_all(cards);
     def show_hand(self):
-        print(self.name," has ",self.hand);
+        print(self.name," has ",self.hand)
+class Hand:
+    def __init__(self):
+        self.cards =[];
+    def __str__(self):
+        return ", ".join(map(str,self.cards));
+    def add_card(self,card):
+        self.cards.append(card);
+    def take_top(self):
+        return self.cards.pop(0);
+    def add_all(self):
+        self.cards.extend(cards);
+    @property
+    def has_cards(self):
+        return bool(self.cards);
+class Deck:
+   def __init__(self):
+       self.cards = [Card(s,r) for s in Card.SUITE for r in Card.RANKS]
+   def shuffle(self):
+       random.shuffle(self.cards);
+   def setup_hands(self,players):
+        hands = [player.hand for player in players];
+        while len(self.cards) >= len(players):
+            for hand in hands:
+                hand.add_card(self.cards.pop());
+        return hands;
+class Card: 
+    SUITE = "Paus Copas Ouros Espadas".split();
+    RANKS = "2 3 4 5 6 7 8 9 10 J Q K A".split();
+    def __init__(self, suite,rank):
+        self.suite,self.rank = suite,rank; 
+    def __str__(self):
+        return "{}-{}".format(self.rank,self.suite);
+    @property
+    def value(self):
+        return self.RANKS.index(self.rank);
+class Pot:
+   def __init__(self):
+       self.cards = [];
+       self.players =[];
+       self.bonus = [];
+   def add_cards(self,card,player):
+       self.cards.append(card);
+       self.players.append(player);
+   def add_bonus(self,cards):
+       self.bonus.extend(cards);
+   @property
+   def winner(self):
+       self.show_pot()
+       values = [card.value for card in self.cards];
+       self.best = max(values);
+       if values.count(self.best) == 1:
+           return self.players[values.index(self.best)];
+   def show_pot(self):
+       for player, card in zip(self.players,self.cards):
+           print("{} play {}.".format(player.name,card));
+   def reward(self,player):
+       player.give_cards(self.cards);
+       player.give_cards(self.bonus);
+   @property
+   def tied(self):
+       for card, player in zip(self.cards,self.players):
+           if card.value == self.best:
+               yield player;
+
+def print_underline(string,line):
+    print("\n{}\n{}".format(string,line * len(string)));
+table = Table(["Mike,Natali,Cesar,Melki"]);
+table.deal_cards();
+table.play_all();
+
