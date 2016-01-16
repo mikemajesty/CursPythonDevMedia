@@ -6,7 +6,7 @@
     <ProjectGuid>2c689dbb-9388-45c1-9701-d88a461bebf9</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>aula35.py</StartupFile>
+    <StartupFile>aula36.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -116,6 +116,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="aula35.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="aula36.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="aula4.py">
