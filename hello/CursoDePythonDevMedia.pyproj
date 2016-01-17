@@ -6,7 +6,7 @@
     <ProjectGuid>2c689dbb-9388-45c1-9701-d88a461bebf9</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>aula36.py</StartupFile>
+    <StartupFile>aula37.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -121,6 +121,9 @@
     <Compile Include="aula36.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="aula37.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="aula4.py">
       <SubType>Code</SubType>
     </Compile>
@@ -143,6 +146,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aula24-web.html" />
+    <Content Include="clear.jpg" />
+    <Content Include="web.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
